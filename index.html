@@ -1,1 +1,166 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+            background-color: black;
+            color: white;
+        }
+
+        header{
+            margin-top: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 9%;
+            background-color: transparent;
+            filter: drop-shadow(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        nav a{
+            font-size: 1.8rem;
+            color: rgb(255, 255, 255);
+            margin-left: 4rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        
+        nav a:hover
+        nav a.active{
+            color: #cc0033;
+            border-bottom: 3px solid #cc0033;
+        }
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+            background-color: #161516;
+        }
+
+        .content {
+            flex: 1;
+            padding: 5% 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .image-section {
+            flex: 1;
+            background-image: url("HD\ wallpaper_\ anime\ characters\ digital\ wallpaper\,\ anime\ compilation\ wallpaper.jfif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            color: white;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .hire {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #ff0033;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .learn-more:hover {
+            background-color: #cc0033;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        img {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 10px solid #0e0d0d;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .content, .image-section {
+                width: 100%;
+            }
+
+            .content {
+                padding: 2rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" > </a> Contact</a>
+            <a href="#" > </a>Facebook</a>
+            <a href="#" > </a>Instagram</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h1>Hi! I'm Christian</h1>
+            <p>"I am an IT Developer with a strong focus on creating innovative and efficient solutions. Skilled in Java language and web designing, I thrive on turning complex problems into user-friendly applications. Passionate about technology, I continuously adapt to new trends to deliver impactful results."</p>
+            <a href="#" class="hire">Hire me!!</a>
+        </div>
+        <div class="image-section">
+            <img src="https://scontent.fcgy2-1.fna.fbcdn.net/v/t1.15752-9/473183422_1017127386891714_1912156686307082113_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGQMyOTLWyrlYKU5IckmtC5GWtoAlX2C_QZa2gCVfYL9F5vXGmQj_hz5GyosKFeyK4QVg4a-bO85MwS-elPzuoG&_nc_ohc=bpzKW_SYerkQ7kNvgHaYSaR&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&oh=03_Q7cD1gHgsTcuM5zt5NSCLcELR9pxNmcuO6aPHPoFMngd1Dglkg&oe=67B4ADD6" alt="">
+        </div>
+    </div>
+</body>
+</html>
